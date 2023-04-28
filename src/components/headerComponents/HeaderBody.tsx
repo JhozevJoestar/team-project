@@ -4,16 +4,16 @@ import cn from "classnames";
 import classes from "../../styles/components/headerComponents/HeaderBody.module.scss";
 
 const HeaderBody = (props) => {
-  const mainCn = cn(
-    props.classN === "notification" && classes.notification,
-    props.classN === "login" && classes.login,
-    props.classN === "movies" && classes.movies,
-    props.classN === "series" && classes.series,
-    props.classN === "cartoons" && classes.cartoons,
-    props.classN === "tv" && classes.tv
-  );
+    const mainCn = cn(
+        props.classN === "notification" && classes.notification,
+        props.classN === "login" && classes.login,
+        props.classN === "movies" && classes.movies,
+        props.classN === "series" && classes.series,
+        props.classN === "cartoons" && classes.cartoons,
+        props.classN === "tv" && classes.tv
+    );
 
-  return <div className={mainCn}>{props.children}</div>;
+    return <div className={mainCn}>{props.children}</div>;
 };
 
 export default HeaderBody;

@@ -2,7 +2,7 @@
 const path = require('path')
 
 const nextConfig = {
-    reactStrictMode: true,
+    reactStrictMode: false,
     i18n: {
         locales: ["ru", "en"],
         defaultLocale: "ru",
